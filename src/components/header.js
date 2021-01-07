@@ -3,7 +3,10 @@ import { Link } from "gatsby";
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import { menuData } from '../data/MenuData';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4255fbcd7ff4afc5f1cec04dc20872a698ef1a5d
 const Header = () => {
   return (
     <Nav>
@@ -21,6 +24,7 @@ const Header = () => {
 }
 
 export default Header;
+<<<<<<< HEAD
 
 const Nav = styled.nav`
   background: #333;
@@ -63,4 +67,48 @@ const NavMenu = styled.div `
   display: none;
 }
 
+=======
+
+const Nav = styled.nav`
+  background: #333;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1300px) / 2);
+  z-index:100;
+  position: relative;
+`
+const NavLink = styled(Link)`
+  color:#fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+`
+const Bars = styled(FaBars) `
+  display: none;
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+
+}
+`
+const NavMenu = styled.div `
+  display: flex;
+  align-items: center;
+  margin-right: --48px;
+
+@media screen and (max-width: 768px) {
+  display: none;
+}
+
+>>>>>>> 4255fbcd7ff4afc5f1cec04dc20872a698ef1a5d
 `
